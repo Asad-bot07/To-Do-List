@@ -39,10 +39,12 @@ A simple and lightweight To-Do List web application built with HTML,Tailwind CSS
 ## 📂 Project Structure
 
 ```bash
-To-Do-List/Programs
+To-Do-List/
 ├── index.html     # Main HTML file for the to-do list UI
-├── style.css      # CSS file for styling the app
-└── script.js      # JavaScript logic for adding, deleting & saving tasks
+├── output.css     # Compiled Tailwind CSS file (via npx tailwindcss ...)
+├── script.js      # JavaScript logic for adding/deleting tasks
+└── style.css      # Custom styles (overrides or additions to Tailwind)
+
 ```
 ---
 
