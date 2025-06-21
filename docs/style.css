@@ -7,15 +7,21 @@
   align-items: flex-start;
   gap: 0.5rem;                           /* gap-2 */
   max-width: 100%;
-  word-break: break-word;               /* break-words */
-  transition: all 0.3s ease-in-out;     /* transition-all duration-300 ease-in-out */
+  word-break: break-word;
+  transition: all 0.3s ease-in-out;
+  
+  /* ✅ Add border */
+  border: 2px solid #3b82f6;            /* blue-500 border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* soft shadow */
 }
 
+
 #to-do-list > li:hover {
-  transform: scale(1.10);               /* hover:scale-110 */
-  outline: 2px solid white;             /* hover:ring-2 ring-white */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* hover:shadow-2xl shadow-black */
+  transform: scale(1.10);
+  outline: 2px solid white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
+
 
 #to-do-list > li > span {
   flex: 1;
