@@ -1,0 +1,45 @@
+#to-do-list > li {
+  background-color: #bfdbfe;            /* bg-blue-200 */
+  padding: 0.5rem;                       /* p-2 */
+  border-radius: 1rem;                   /* rounded-2xl */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;                           /* gap-2 */
+  max-width: 100%;
+  word-break: break-word;               /* break-words */
+  transition: all 0.3s ease-in-out;     /* transition-all duration-300 ease-in-out */
+}
+
+#to-do-list > li:hover {
+  transform: scale(1.10);               /* hover:scale-110 */
+  outline: 2px solid white;             /* hover:ring-2 ring-white */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* hover:shadow-2xl shadow-black */
+}
+
+#to-do-list > li > span {
+  flex: 1;
+  word-break: break-word;
+}
+
+#to-do-list > li > button {
+  background-color: #ef4444;            /* bg-red-500 */
+  color: white;
+  font-size: 0.875rem;                  /* text-sm */
+  padding: 0.25rem 0.75rem;             /* px-3 py-1 */
+  border-radius: 0.75rem;               /* rounded-xl */
+  white-space: nowrap;
+  transition: transform 0.2s, background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+#to-do-list > li > button:hover {
+  background-color: #dc2626;            /* hover:bg-red-600 */
+  transform: scale(0.90);               /* hover:scale-90 */
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.8;
+}
