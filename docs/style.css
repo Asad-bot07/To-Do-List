@@ -43,3 +43,15 @@
   color: gray;
   opacity: 0.8;
 }
+html, body {
+  height: 100%;
+  overflow: hidden; /* prevent scroll bounce */
+  overscroll-behavior: none; /* disable pull-to-refresh and bounce on mobile */
+  touch-action: manipulation; /* smoother tapping on mobile */
+}
+
+body {
+  position: fixed; /* prevent movement on mobile */
+  width: 100%;
+  max-width: 100vw;
+}
